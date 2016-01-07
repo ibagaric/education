@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- CSS -->
+    <!-- load up bootstrap and add some spacing -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- load up angular and custom script -->
+    <script src="js/angular.min.js"></script>
+    <script src="js/app.js"></script>
+    
+
+    
+
+</head>
+
+
+<body ng-app="appEduka" ng-controller="FormController" >
+    
+<!--KONTAKT PODACI -->    
+<div class="jumbotron kontaktpodaci">
+    <div class="container">
+        <div class="col-xs-12 col-sm-6 col-sm-offset-3">         
+            
+
+            
+            <h2>Prijavi se za Edukacije</h2>
+            <form id="eee" >
+            <!-- DATA INPUT -->
+            <div class="form-group">
+                <label>Ime </label>
+                <input type="text" class="form-control" name="name" ng-model="formData.name">
+            </div>
+
+            <div class="form-group">
+                <label>Prezime </label>
+                <input type="text" class="form-control" name="lastname" ng-model="formData.lastname">
+            </div>
+
+            <div class="form-group">
+                <label>E-mail</label>
+                <input type="text" class="form-control" name="lastname" ng-model="formData.email">
+            </div>
+
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" name="awesome" ng-model="formData.awesome" ng-true-value="ofCourse" ng-false-value="iWish"> Želite li primati Newsletter?
+                </label>
+            </div>
+                
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="col-xs-12 col-sm-6 col-sm-offset-3">       
+
+        <!-- MULTIPLE CHECKBOXES -->
+
+        <h2>Izaberite tečaj</h2>  
+        
+
+        <div class="grupa_tecaja">   
+            <h2>GEL</h2>
+            <p>HTML and CSS are the languages you can use to build and style websites. In these courses, you’ll learn the basics of HTML and CSS, build your first website, and then review some of the current HTML5 and CSS3 best practices.</p>
+        </div>
+        <div class="btn-group izaberi">
+          
+            <ul>
+              <li ng-class="{'active': orange}">
+                <input type="checkbox" ng-model="orange"> 
+                  <p>Početni tečaj<br>
+                      1.dan - teorijski dio - anatomija nokta i bolesti noktiju, te praktični dio rada s tipsama
+                     2.dan - rad sa šablonama - usavršavanje gel tehnike</p>
+                  <p>2 dana; 14h; do 2 polaznika</p>
+                  <p>1500kn bez start paketa. 2000kn sa start paketom.</p>
+              </li>
+              <li ng-class="{'active': red}">
+                <input type="checkbox" ng-model="red"> 
+                  <p>Početni tečaj<br>
+                      1.dan - teorijski dio - anatomija nokta i bolesti noktiju, te praktični dio rada s tipsama
+                     2.dan - rad sa šablonama - usavršavanje gel tehnike</p>
+                  <p>2 dana; 14h; do 2 polaznika</p>
+                  <p>1500kn bez start paketa. 2000kn sa start paketom.</p>
+              </li>
+              <li ng-class="{'active': blue}">
+                <input type="checkbox" ng-model="blue"> 
+                  <p>Početni tečaj<br>
+                      1.dan - teorijski dio - anatomija nokta i bolesti noktiju, te praktični dio rada s tipsama
+                     2.dan - rad sa šablonama - usavršavanje gel tehnike</p>
+                  <p>2 dana; 14h; do 2 polaznika</p>
+                  <p>1500kn bez start paketa. 2000kn sa start paketom.</p>
+              </li>
+              <li ng-class="{'active': black}">
+                <input type="checkbox" ng-model="black"> 
+                  <p>Početni tečaj<br>
+                      1.dan - teorijski dio - anatomija nokta i bolesti noktiju, te praktični dio rada s tipsama
+                     2.dan - rad sa šablonama - usavršavanje gel tehnike</p>
+                  <p>2 dana; 14h; do 2 polaznika</p>
+                  <p>1500kn bez start paketa. 2000kn sa start paketom.</p>
+              </li>                
+            </ul>
+        </div>
+     
+
+        <button type="submit" class="btn btn-danger btn-lg">Pošalji!</button>
+        
+
+    </form>
+        
+    </div>
+</div>
+
+<!-- FOOTER -->
+<div class="jumbotron">
+    <div class="container">
+        <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+            
+            <!-- SHOW OFF OUR FORMDATA OBJECT -->
+            <h2>Footer</h2>
+            <pre>
+                {{ formData }}
+            </pre>
+                
+        </div>
+    </div>
+</div>  
+
+</body>
+
+    <!-- JS -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</html>

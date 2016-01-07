@@ -1,0 +1,41 @@
+body{ 
+    background-color: #f6f5ed;
+}
+
+.izaberi .active{
+    transition: transform 0.2s ease-in-out 0s, background 0.2s ease-in-out 0s;
+    box-shadow: 0 1px 5px 1px #64a167;   
+    background-color: aqua;
+    transform: scale(1.1);
+}
+
+.izaberi .active{
+    transition: transform 0.2s ease-in-out 0s, background 0.2s ease-in-out 0s;
+    box-shadow: 0 1px 5px 1px #64a167;   
+    background-color: aqua;
+    transform: scale(1.1);
+}
+
+
+.jumbotron{
+    background-color: #fff;
+    border-radius: 0;
+}
+
+.kontaktpodaci{
+    background: url(../images/bg_pattern_1.png) repeat top center;
+    color: #fff;
+}
+
+.active{
+    color: red;
+    background-color: yellow;
+}
+
+.has-error {
+    color: red;
+    background-color: yellow;
+}
+
+
+.bold {font-weight: bold}
