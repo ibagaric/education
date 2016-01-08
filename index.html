@@ -43,19 +43,17 @@
           </div>
           <div class="navbar-collapse collapse pull-right">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li class="active"><a href="#">Naslovnica</a></li>
+              <li><a href="#about">Facebook</a></li>
+              <li><a href="#contact">Kontakt</a></li>
               <li class="dropdown">
-                <a aria-expanded="false" aria-haspopup="true" role="button" data-toggle="dropdown" class="dropdown-toggle" href="#">Dropdown <span class="caret"></span></a>
+                <a aria-expanded="false" aria-haspopup="true" role="button" data-toggle="dropdown" class="dropdown-toggle" href="#">Država <span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
-                  <li class="divider" role="separator"></li>
-                  <li class="dropdown-header">Nav header</li>
-                  <li><a href="#">Separated link</a></li>
-                  <li><a href="#">One more separated link</a></li>
+                  <li><a href="#">Austrija</a></li>
+                  <li><a href="#">Njemačka</a></li>
+                  <li><a href="#">Slovenija</a></li>
+                  <li><a href="#">Švicarska</a></li>
+                  <li><a href="#">Hrvatska</a></li>
                 </ul>
               </li>
             </ul>
@@ -72,23 +70,29 @@
             
             <h1 class="title">Prijavi se za Edukacije</h1>
             <form id="eee" >
+            
             <!-- DATA INPUT -->
-            <div class="form-group">
+            <div class="form-group col-xs-12 col-sm-6">
                 <label>Ime </label>
                 <input type="text" class="form-control" name="name" ng-model="formData.name">
             </div>
 
-            <div class="form-group">
+            <div class="form-group col-xs-12 col-sm-6">
                 <label>Prezime </label>
                 <input type="text" class="form-control" name="lastname" ng-model="formData.lastname">
             </div>
 
-            <div class="form-group">
+            <div class="form-group col-xs-12 col-sm-6">
+                <label>E-mail</label>
+                <input type="text" class="form-control" name="lastname" ng-model="formData.email">
+            </div>
+            
+            <div class="form-group col-xs-12 col-sm-6">
                 <label>E-mail</label>
                 <input type="text" class="form-control" name="lastname" ng-model="formData.email">
             </div>
 
-            <div class="checkbox">
+            <div class="checkbox col-xs-6">
                 <label>
                     <input type="checkbox" name="awesome" ng-model="formData.awesome" ng-true-value="ofCourse" ng-false-value="iWish"> Želite li primati Newsletter?
                 </label>
@@ -98,103 +102,192 @@
     </div>
 </div>
 
-<div class="container">
-    <div class="col-xs-12 col-sm-6 col-sm-offset-3">       
+<div class="container" style="padding-bottom: 50px;">
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1">       
 
         <!-- MULTIPLE CHECKBOXES -->
 
-        <h2 class="title">Izaberite tečaj</h2>  
+        <h2 class="title">Izaberite tečaj</h2> 
         
 
         <div class="grupa_tecaja">   
             <h3 class="title">GEL</h3>
-            <p class="small">HTML and CSS are the languages you can use to build and style websites. In these courses, you’ll learn the basics of HTML and CSS, build your first website, and then review some of the current HTML5 and CSS3 best practices.</p>
-        </div>
-        <div class="btn-group izaberi">
-              <label ng-class="{'active': orange}" for="ivan">
-                <input type="checkbox" ng-model="orange" id="ivan"> 
-                  <p>Početni tečaj<br>
-                     1.dan - teorijski dio - anatomija nokta i bolesti noktiju, te praktični dio rada s tipsama<br>
-                     2.dan - rad sa šablonama - usavršavanje gel tehnike</br>
-                     2 dana; 14h; do 2 polaznika</br>
-                     1500kn bez start paketa. 2000kn sa start paketom.
-                  </p>
-              </label>
-              <label ng-class="{'active': orange}" for="ivan">
-                <input type="checkbox" ng-model="orange" id="ivan"> 
-                  <p>Početni tečaj<br>
-                     1.dan - teorijski dio - anatomija nokta i bolesti noktiju, te praktični dio rada s tipsama<br>
-                     2.dan - rad sa šablonama - usavršavanje gel tehnike</br>
-                     2 dana; 14h; do 2 polaznika</br>
-                     1500kn bez start paketa. 2000kn sa start paketom.
-                  </p>
-              </label>
-              <label ng-class="{'active': orange}" for="ivan">
-                <input type="checkbox" ng-model="orange" id="ivan"> 
-                  <p>Početni tečaj<br>
-                     1.dan - teorijski dio - anatomija nokta i bolesti noktiju, te praktični dio rada s tipsama<br>
-                     2.dan - rad sa šablonama - usavršavanje gel tehnike</br>
-                     2 dana; 14h; do 2 polaznika</br>
-                     1500kn bez start paketa. 2000kn sa start paketom.
-                  </p>
-              </label>
-              <label ng-class="{'active': orange}" for="ivan">
-                <input type="checkbox" ng-model="orange" id="ivan"> 
-                  <p>Početni tečaj<br>
-                     1.dan - teorijski dio - anatomija nokta i bolesti noktiju, te praktični dio rada s tipsama<br>
-                     2.dan - rad sa šablonama - usavršavanje gel tehnike</br>
-                     2 dana; 14h; do 2 polaznika</br>
-                     1500kn bez start paketa. 2000kn sa start paketom.
-                  </p>
-              </label>               
+            <p class="small">Ukratko o tečajevima Tečaj sadrži teorijski dio koji obuhvaća upoznavanje s bojama i kistovima te praktični dio vježbe jednostavnih i složenih motiva. Radi se na tipsama. U cijenu je uključen 1 kist te 2 akrilne boje.</p>
         </div>
         
+        <div class="izaberi row">
+                 
+            <label class="col-xs-12 col-sm-4" for="ivan"> 
+                 <div class="eduChoose row" ng-class="{'active': ivan}">                             
+                    <div class="logoOfTuts">
+                        <img src="images/JN-Black-Circle.png">
+                        <input type="checkbox" ng-model="ivan" id="ivan">
+                    </div>                    
+                    <div class="textOfTutus col-xs-12">
+                        <h3>Početni tečaj</h3>
+                        <p>
+                            1.dan - teorijski dio - anatomija nokta i bolesti noktiju, te praktični dio rada s tipsama<br>
+                            2.dan - rad sa šablonama - usavršavanje gel tehnike</br>
+                            2 dana; 14h; do 2 polaznika</ br>
+                        </p>                        
+                    </div> 
+                    <div class="price col-xs-12">1500kn bez start paketa. 2000kn sa start paketom.</div> 
+                 </div>
+             </label>
+                        
+            <label class="col-xs-12 col-sm-4" for="pero"> 
+                 <div class="eduChoose row" ng-class="{'active': pero}">                             
+                    <div class="logoOfTuts">
+                        <img src="images/JN-Black-Circle.png">
+                        <input type="checkbox" ng-model="pero" id="pero">
+                    </div>                    
+                    <div class="textOfTutus col-xs-12">
+                        <h3>Početni tečaj</h3>
+                        <p>
+                            1.dan - teorijski dio - anatomija nokta i bolesti noktiju, te praktični dio rada s tipsama<br>
+                            2.dan - rad sa šablonama - usavršavanje gel tehnike</br>
+                            2 dana; 14h; do 2 polaznika</ br>
+                        </p>                        
+                    </div> 
+                    <div class="price col-xs-12">1500kn bez start paketa. 2000kn sa start paketom.</div> 
+                 </div>
+             </label>
+                        
+            <label class="col-xs-12 col-sm-4" for="pero"> 
+                 <div class="eduChoose row" ng-class="{'active': blue}">                             
+                    <div class="logoOfTuts">
+                        <img src="images/JN-Black-Circle.png">
+                        <input type="checkbox" ng-model="blue" id="pero">
+                    </div>                    
+                    <div class="textOfTutus col-xs-12">
+                        <h3>Početni tečaj</h3>
+                        <p>
+                            1.dan - teorijski dio - anatomija nokta i bolesti noktiju, te praktični dio rada s tipsama<br>
+                            2.dan - rad sa šablonama - usavršavanje gel tehnike</br>
+                            2 dana; 14h; do 2 polaznika</ br>
+                        </p>                        
+                    </div> 
+                    <div class="price col-xs-12">1500kn bez start paketa. 2000kn sa start paketom.</div> 
+                 </div>
+             </label>
+
+        </div>
+            
+        <div class="izaberi row">
+                 
+            <label class="col-xs-12 col-sm-4" for="pero"> 
+                 <div class="eduChoose row" ng-class="{'active': ivan}">                             
+                    <div class="logoOfTuts">
+                        <img src="images/JN-Black-Circle.png">
+                        <input type="checkbox" ng-model="ivan" id="pero">
+                    </div>                    
+                    <div class="textOfTutus col-xs-12">
+                        <h3>Početni tečaj</h3>
+                        <p>
+                            1.dan - teorijski dio - anatomija nokta i bolesti noktiju, te praktični dio rada s tipsama<br>
+                            2.dan - rad sa šablonama - usavršavanje gel tehnike</br>
+                            2 dana; 14h; do 2 polaznika</ br>
+                        </p>                        
+                    </div> 
+                    <div class="price col-xs-12">1500kn bez start paketa. 2000kn sa start paketom.</div> 
+                 </div>
+             </label>
+                        
+            <label class="col-xs-12 col-sm-4" for="pero"> 
+                 <div class="eduChoose row" ng-class="{'active': blue}">                             
+                    <div class="logoOfTuts">
+                        <img src="images/JN-Black-Circle.png">
+                        <input type="checkbox" ng-model="blue" id="pero">
+                    </div>                    
+                    <div class="textOfTutus col-xs-12">
+                        <h3>Početni tečaj</h3>
+                        <p>
+                            1.dan - teorijski dio - anatomija nokta i bolesti noktiju, te praktični dio rada s tipsama<br>
+                            2.dan - rad sa šablonama - usavršavanje gel tehnike</br>
+                            2 dana; 14h; do 2 polaznika</ br>
+                        </p>                        
+                    </div> 
+                    <div class="price col-xs-12">1500kn bez start paketa. 2000kn sa start paketom.</div> 
+                 </div>
+             </label>
+                        
+            <label class="col-xs-12 col-sm-4" for="pero"> 
+                 <div class="eduChoose row" ng-class="{'active': blue}">                             
+                    <div class="logoOfTuts">
+                        <img src="images/JN-Black-Circle.png">
+                        <input type="checkbox" ng-model="blue" id="pero">
+                    </div>                    
+                    <div class="textOfTutus col-xs-12">
+                        <h3>Početni tečaj</h3>
+                        <p>
+                            1.dan - teorijski dio - anatomija nokta i bolesti noktiju, te praktični dio rada s tipsama<br>
+                            2.dan - rad sa šablonama - usavršavanje gel tehnike</br>
+                            2 dana; 14h; do 2 polaznika</ br>
+                        </p>                        
+                    </div> 
+                    <div class="price col-xs-12">1500kn bez start paketa. 2000kn sa start paketom.</div> 
+                 </div>
+             </label>
+
+        </div>
+            
+                                   
+    </div>
+        
+        <h2 class="title">&nbsp;</h2> 
         
         <div class="grupa_tecaja">   
             <h3 class="title">Trepavice</h3>
-            <p class="small">HTML and CSS are the languages you can use to build and style websites. In these courses, you’ll learn the basics of HTML and CSS, build your first website, and then review some of the current HTML5 and CSS3 best practices.</p>
+            <p class="small">Ukratko o tečajevima Tečaj sadrži teorijski dio koji obuhvaća upoznavanje s bojama i kistovima te praktični dio vježbe jednostavnih i složenih motiva. Radi se na tipsama. U cijenu je uključen 1 kist te 2 akrilne boje.</p>
         </div>
-        <div class="btn-group izaberi">
-              <label ng-class="{'active': orange}" for="ivan">
-                <input type="checkbox" ng-model="orange" id="ivan"> 
-                  <p>Početni tečaj<br>
-                     1.dan - teorijski dio - anatomija nokta i bolesti noktiju, te praktični dio rada s tipsama<br>
-                     2.dan - rad sa šablonama - usavršavanje gel tehnike</br>
-                     2 dana; 14h; do 2 polaznika</br>
-                     1500kn bez start paketa. 2000kn sa start paketom.
-                  </p>
-              </label>
-              <label ng-class="{'active': orange}" for="ivan">
-                <input type="checkbox" ng-model="orange" id="ivan"> 
-                  <p>Početni tečaj<br>
-                     1.dan - teorijski dio - anatomija nokta i bolesti noktiju, te praktični dio rada s tipsama<br>
-                     2.dan - rad sa šablonama - usavršavanje gel tehnike</br>
-                     2 dana; 14h; do 2 polaznika</br>
-                     1500kn bez start paketa. 2000kn sa start paketom.
-                  </p>
-              </label>
-              <label ng-class="{'active': orange}" for="ivan">
-                <input type="checkbox" ng-model="orange" id="ivan"> 
-                  <p>Početni tečaj<br>
-                     1.dan - teorijski dio - anatomija nokta i bolesti noktiju, te praktični dio rada s tipsama<br>
-                     2.dan - rad sa šablonama - usavršavanje gel tehnike</br>
-                     2 dana; 14h; do 2 polaznika</br>
-                     1500kn bez start paketa. 2000kn sa start paketom.
-                  </p>
-              </label>
-              <label ng-class="{'active': orange}" for="ivan">
-                <input type="checkbox" ng-model="orange" id="ivan"> 
-                  <p>Početni tečaj<br>
-                     1.dan - teorijski dio - anatomija nokta i bolesti noktiju, te praktični dio rada s tipsama<br>
-                     2.dan - rad sa šablonama - usavršavanje gel tehnike</br>
-                     2 dana; 14h; do 2 polaznika</br>
-                     1500kn bez start paketa. 2000kn sa start paketom.
-                  </p>
-              </label>               
+        
+        <div class="btn-group izaberi row">
+                 
+            <label class="col-xs-12 col-sm-4" for="pero"> 
+                 <div class="eduChoose row" ng-class="{'active': blue}">                             
+                    <div class="logoOfTuts">
+                        <img src="images/JN-Black-Circle.png">
+                        <input type="checkbox" ng-model="blue" id="pero">
+                    </div>                    
+                    <div class="textOfTutus col-xs-12">
+                        <h3>Početni tečaj</h3>
+                        <p>
+                            1.dan - teorijski dio - anatomija nokta i bolesti noktiju, te praktični dio rada s tipsama<br>
+                            2.dan - rad sa šablonama - usavršavanje gel tehnike</br>
+                            2 dana; 14h; do 2 polaznika</ br>
+                        </p>                        
+                    </div> 
+                    <div class="price col-xs-12">1500kn bez start paketa. 2000kn sa start paketom.</div> 
+                 </div>
+             </label>
+                        
+            <label class="col-xs-12 col-sm-4" for="pero"> 
+                 <div class="eduChoose row" ng-class="{'active': blue}">                             
+                    <div class="logoOfTuts">
+                        <img src="images/JN-Black-Circle.png">
+                        <input type="checkbox" ng-model="blue" id="pero">
+                    </div>                    
+                    <div class="textOfTutus col-xs-12">
+                        <h3>Početni tečaj</h3>
+                        <p>
+                            1.dan - teorijski dio - anatomija nokta i bolesti noktiju, te praktični dio rada s tipsama<br>
+                            2.dan - rad sa šablonama - usavršavanje gel tehnike</br>
+                            2 dana; 14h; do 2 polaznika</ br>
+                        </p>                        
+                    </div> 
+                    <div class="price col-xs-12">1500kn bez start paketa. 2000kn sa start paketom.</div> 
+                 </div>
+             </label>
+                                    
         </div>
+        
+        
+        
+        
+        <hr>
      
 
-        <button type="submit" class="btn btn-danger btn-lg">Pošalji!</button>
+        <button type="submit" class="btn btn-danger btn-lg col-xs-12">Pošalji!</button>
         
 
     </form>
@@ -203,12 +296,13 @@
 </div>
 
 <!-- FOOTER -->
-<div class="jumbotron">
+<div class="jumbotron" style="margin:0;">
     <div class="container">
         <div class="col-xs-12 col-sm-6 col-sm-offset-3">
             
             <!-- SHOW OFF OUR FORMDATA OBJECT -->
             <h2>Footer</h2>
+            <p>kontakt | o nama | </p>
             <pre>
                 {{ formData }}
             </pre>
