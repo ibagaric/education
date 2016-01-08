@@ -2,6 +2,20 @@ body{
     background-color: #f6f5ed;
 }
 
+.navbar{
+    margin: 0;
+    border-radius: 0;
+}
+
+.navbar img{
+    height: 60px;
+}
+
+.navbar-inverse{
+    background-color: #000;
+    border: 0;
+}
+
 .izaberi .active{
     transition: transform 0.2s ease-in-out 0s, background 0.2s ease-in-out 0s;
     box-shadow: 0 1px 5px 1px #64a167;   
@@ -39,3 +53,27 @@ body{
 
 
 .bold {font-weight: bold}
+
+h1 {
+    font-size: 60px;
+    font-weight: 700;
+    margin: 0 0 50px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0 0 50px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 0 30px 0;
+}
+
+.title{
+    font-family: 'Noto Serif', serif;
+}
